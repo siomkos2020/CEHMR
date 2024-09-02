@@ -1,5 +1,5 @@
 # CEHMR
-A project for medication recommendation based EHR dataset
+The code for the paper *CEHMR: Curriculum learning enhanced hierarchical multi-label classification for medication recommendation*.
 
 ## Run training
 ```
