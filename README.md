@@ -7,7 +7,7 @@ For reproduction of our medication recommendation results in our [paper](https:/
 We follows the data processing of [GAMENet](https://github.com/sjy1203/GAMENet?tab=readme-ov-file) and add two additional data processing procedures. The procedures are as follows:
 - Extract patient data from MIMIC-III database:
   1. download [MIMIC data](https://mimic.mit.edu/docs/gettingstarted/ ) and put DIAGNOSES_ICD.csv, PRESCRIPTIONS.csv, PROCEDURES_ICD.csv in ./data/
-  2. Download [DDI data](https://www.dropbox.com/s/8os4pd2zmp2jemd/drug-DDI.csv?e=1&dl=0 ) and put it in ./data/
+  2. download [DDI data](https://www.dropbox.com/s/8os4pd2zmp2jemd/drug-DDI.csv?e=1&dl=0 ) and put it in ./data/
   3. run the following code
     ```
     cd ./tools
@@ -25,7 +25,7 @@ We follows the data processing of [GAMENet](https://github.com/sjy1203/GAMENet?t
   - data_train.pkl/data_eval.pkl/data_test.pkl: the train/eval/test data;
   
 ## Measuring the difficulties of training samples
-When you first run the train_CEHMR.py, CEHMR is trained by all training samples without curriculum learning strategy. The pretrained model weights are saved in ./baselines/saved/[model_name]. To measure difficulties of training samples, please manually copy the best model weights to the directory ./baselines/saved/pretrained/ and rename it as pretrained_model.model. Then, run the following command:
+To make the following code work, you should first remove the provided ./data/hire_data/. When you first run the train_CEHMR.py, CEHMR is trained by all training samples without curriculum learning strategy. The pretrained model weights are saved in ./baselines/saved/[model_name]. To measure difficulties of training samples, please manually copy the best model weights to the directory ./baselines/saved/pretrained/ and rename it as pretrained_model.model. Then, run the following command:
 ```
 cd baselines
 python train_CEHMR.py --CL_Train --lr 0.0006
