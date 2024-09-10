@@ -1,13 +1,13 @@
 # CEHMR
 The code for the paper *CEHMR: Curriculum learning enhanced hierarchical multi-label classification for medication recommendation*.
 
-For reproduction of our medication recommendation results in our [paper] (https://doi.org/10.1016/j.artmed.2023.102613 ), see instructions below.
+For reproduction of our medication recommendation results in our [paper](https://doi.org/10.1016/j.artmed.2023.102613 ), see instructions below.
 
 ## Data processing
-We follows the data processing of [GAMENet] (https://github.com/sjy1203/GAMENet?tab=readme-ov-file) and add two additional data processing procedures. The procedures are as follows:
+We follows the data processing of [GAMENet](https://github.com/sjy1203/GAMENet?tab=readme-ov-file) and add two additional data processing procedures. The procedures are as follows:
 - Extract patient data from MIMIC-III database:
-  1. download [MIMIC data] (https://mimic.mit.edu/docs/gettingstarted/ ) and put DIAGNOSES_ICD.csv, PRESCRIPTIONS.csv, PROCEDURES_ICD.csv in ./data/
-  2. Download [DDI data] (https://www.dropbox.com/s/8os4pd2zmp2jemd/drug-DDI.csv?e=1&dl=0 ) and put it in ./data/
+  1. download [MIMIC data](https://mimic.mit.edu/docs/gettingstarted/ ) and put DIAGNOSES_ICD.csv, PRESCRIPTIONS.csv, PROCEDURES_ICD.csv in ./data/
+  2. Download [DDI data](https://www.dropbox.com/s/8os4pd2zmp2jemd/drug-DDI.csv?e=1&dl=0 ) and put it in ./data/
   3. run the following code
     ```
     cd ./tools
