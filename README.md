@@ -9,6 +9,7 @@ We follows the data processing of [GAMENet](https://github.com/sjy1203/GAMENet?t
   1. download [MIMIC data](https://mimic.mit.edu/docs/gettingstarted/ ) and put DIAGNOSES_ICD.csv, PRESCRIPTIONS.csv, PROCEDURES_ICD.csv in ./data/
   2. download [DDI data](https://www.dropbox.com/s/8os4pd2zmp2jemd/drug-DDI.csv?e=1&dl=0 ) and put it in ./data/
   3. run ./data/EDA.ipynb in the notebook
+  
   This step will generate records_final.pkl in the input data with four dimension (patient_idx, visit_idx, medical modal, medical id) where medical model equals 3 made of diagnosis, procedure and drug.
   
 - Building the hierarchical structure of medications
