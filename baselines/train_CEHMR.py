@@ -261,12 +261,7 @@ def main():
                 bootstrap_score(model, dm_weight_path, os.path.join(args.data_dir, 'data_train.pkl'),
                                 voc_size, data_measured_path, device)
                 print('Measuring Ends!')
-                data_train = dill.load(open(data_measured_path, 'rb'))
-                model = CEHMRNet(
-                            vocab_size=voc_size,
-                            emb_dim=64,
-                            device=device
-                                )
+                exit()
             except Exception:
                 exit('Difficulty measuring wrong!')
         else:
